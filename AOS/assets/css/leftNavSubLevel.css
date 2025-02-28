@@ -1,0 +1,25 @@
+.side-navbar .sublevel-menu li a span {
+    display: block;
+    width: 100%;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    text-transform: capitalize;
+}
+
+.side-navbar .sublevel-menu li a .lock-icon {
+    height: 30px;
+    width: 16px;
+}
+
+.side-navbar .sublevel-menu li a .lock-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.side-navbar .sublevel-menu li a:hover span:first-child {
+    background-color: transparent;
+    border-radius: 0;
+}

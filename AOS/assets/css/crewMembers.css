@@ -1,0 +1,164 @@
+.crew-members-block img.crew-members-image {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.crew-members-block li a {
+    padding: 4px 12px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #fff;
+    display: inline-block;
+}
+
+.crew-members-block li a {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: #315996;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+}
+
+.crew-members-block li.active a {
+    background-color: #315996;
+    color: #fff;
+}
+
+.crew-members-block li.active:hover a {
+    background-color: #284C7F;
+    color: #fff;
+}
+
+/* .crew-members-block .table-desktop-view {
+    height: calc(100vh - 312px) !important;
+    overflow: auto !important;
+    overflow-x: hidden !important;
+}
+
+.crew-members-block .table {
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    padding-right: 1rem;
+}
+
+.crew-members-block .table thead {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+} */
+
+.crew-members-block tbody tr {
+    height: 60px !important;
+}
+
+.crew-members-block thead,
+.crew-members-block tbody tr {
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
+.crew-members-block tbody {
+    height: calc(100vh - 355px) !important;
+    overflow: auto !important;
+    display: block !important;
+    overflow-x: hidden !important;
+    margin-top: 5px;
+}
+
+.crew-members-block table th {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: #315996;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-bottom: 1px solid #315996;
+}
+
+.crew-members-block table td {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: #315996;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    vertical-align: middle;
+}
+
+.crew-members-block table tbody tr {
+    border-bottom: 2px solid #B7B7B7;
+    border-right: 12px solid white;
+}
+
+.crew-members-block table th:nth-child(1),
+.crew-members-block table td:nth-child(1) {
+    width: 6%;
+}
+
+.crew-members-block table td span {
+    padding: 4px 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+}
+
+.crew-members-block .badge {
+    color: #fff !important;
+    text-transform: uppercase;
+    padding: 0.3rem 1.6rem;
+    width: auto !important;
+}
+
+.crew-members-block .badge.active {
+    background-color: #3cbd9f;
+}
+
+.crew-members-block .badge.default {
+    background-color: #b7b7b7;
+}
+
+.crew-members-block table tbody tr:last-child {
+    border-bottom: 0px solid transparent;
+}
+
+.crew-members-block .single-grid {
+    border-top: 1px solid #315996;
+}
+
+.crew-members-block .single-grid .title,
+.crew-members-block .single-grid .value {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16.34px;
+    color: #315996;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+.table-mobile-view {
+    display: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 990px) {
+    .crew-members-block .table-desktop-view {
+        display: none;
+    }
+
+    .crew-members-block .table-mobile-view {
+        display: block;
+    }
+}

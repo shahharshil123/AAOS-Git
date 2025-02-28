@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AAOS Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/AAOS_Association_Logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/leftNavBar.css" />
+    <link rel="stylesheet" href="./assets/css/leftNavMainLevel.css" />
+    <link rel="stylesheet" href="./assets/css/leftNavSubLevel.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/stepper.css" />
+    <link rel="stylesheet" href="./assets/css/mainContent.css" />
+    <link rel="stylesheet" href="./assets/css/crewMembers.css" />
+</head>
+
+<body>
+    <section class="main-container">
+        <aside id="sidebar" class="side-navbar">
+            <button class="hamburger mobile-hamburger">
+                <img id="close-sidebar-toggle" src="./assets/images/Hamburger.svg" alt="Hamburger Menu" />
+            </button>
+            <div class="top-logo text-center">
+                <img src="./assets/images/LaunchPad_Logo_Platform.svg" alt="AAOS Logo" />
+            </div>
+            <nav>
+                <div class="side-navbar-heading mb-3">
+                    <a href="#">
+                        <h2 class="m-0 text-uppercase">
+                            <p class="text-center mb-0">AAOS</p>
+                            <p class="text-center middle-title mb-0">LaunchPad</p>
+                            <p class="text-center last-title mb-0">Prepare for TakeOff</p>
+                        </h2>
+                    </a>
+                </div>
+                <ul class="mainlevel-menu">
+                    <li class="mb-1 me-2">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                            data-bs-delay='{"show":500}'>
+                            <span class="active">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="mb-1 me-2">
+                        <a href="#">
+                            <span>Pilot Milestones</span>
+                        </a>
+                        <ul class="sublevel-menu ms-3 mt-2 mb-3">
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center">
+                                    <div class="lock-icon">
+                                        <!-- <img src="./assets/images/LockLeftNav.svg" alt="" /> -->
+                                    </div>
+                                    <span>Annual Meeting</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center">
+                                    <div class="lock-icon">
+                                        <!-- <img src="./assets/images/LockLeftNav.svg" alt="" /> -->
+                                    </div><span>Board
+                                        Prep Part I</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Entering
+                                        Fellowship</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Fellowship Year</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Finding
+                                        a Career</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Annual
+                                        Meeting II</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Starting
+                                        Practice</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Board
+                                        Prep Part II</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Graduation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-1 me-2">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                            data-bs-delay='{"show":500}'>
+                            <span>Crew Members</span>
+                        </a>
+                    </li>
+                    <li class="mb-1 me-2">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                            data-bs-delay='{"show":500}'>
+                            <span>Your Sub Crew</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://www.aaos.org" target="_blank" class="pt-2 text-center d-block">
+                <img src="./assets/images/AAOS_Association_Logo.svg" alt="AAOS Logo" style="width: 150px;" />
+            </a>
+        </aside>
+
+        <main id="mainContent" class="main-content">
+            <header class="p-6">
+                <div class="top-navbar">
+                    <button class="hamburger desktop-hamburger">
+                        <img id="sidebar-toggle" src="./assets/images/HamBurgerBlue.svg" alt="Hamburger Menu" />
+                    </button>
+                    <h1>
+                        Welcome,
+                        <span>Dr. Mary Harris, MD!</span>
+                    </h1>
+                    <div class="profile dropdown">
+                        <img class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            src="./assets/images/Avator_Green.svg" alt="User avatar">
+                        <ul class="dropdown-menu p-0">
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="crew-members-block mt-48 p-6 pt-0">
+                <div class="d-flex align-items-center pb-4">
+                    <img src="./assets/images/CrewMembers.svg" alt="Crew Members" class="crew-members-image" />
+                    <ul>
+                        <li class="active d-inline-block"><a href="#">Your Crew</a></li>
+                        <li class="d-inline-block"><a href="#">All Crew</a></li>
+                    </ul>
+                </div>
+                <div class="table-desktop-view">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Residency Program</th>
+                                <th>Fellowship Program</th>
+                                <th class="ps-0">Speciality</th>
+                                <th class="ps-0">Phone Number</th>
+                                <th class="ps-0">Preferred Email</th>
+                                <th class="ps-0">Your Crew</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewChief.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge active">Yes</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-0"><img src="./assets/images/Launchpad_CrewTeam.svg" alt="User Image"
+                                        class="crew-members-image" /></td>
+                                <td>Name of person</td>
+                                <td>University of A</td>
+                                <td>University of B</td>
+                                <td>Sports Medicine</td>
+                                <td>###-###-###</td>
+                                <td>drf@gmail.com</td>
+                                <td><span class="badge default">No</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-mobile-view">
+                    <div class="single-grid">
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Name</p>
+                            <p class="value w-50">Name of person</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Residency Program</p>
+                            <p class="value w-50">University of A</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Fellowship Program</p>
+                            <p class="value w-50">University of B</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Speciality</p>
+                            <p class="value w-50">Sports Medicine</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Phone NUmber</p>
+                            <p class="value w-50">###-###-###</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Preferred Email</p>
+                            <p class="value w-50">dfd@gmail.com</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Your Crew</p>
+                            <p class="value w-50 badge active">Yes</p>
+                        </div>
+                    </div>
+                    <div class="single-grid">
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Name</p>
+                            <p class="value w-50">Name of person</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Residency Program</p>
+                            <p class="value w-50">University of A</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Fellowship Program</p>
+                            <p class="value w-50">University of B</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Speciality</p>
+                            <p class="value w-50">Sports Medicine</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Phone NUmber</p>
+                            <p class="value w-50">###-###-###</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Preferred Email</p>
+                            <p class="value w-50">dfd@gmail.com</p>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <p class="title text-uppercase w-50">Your Crew</p>
+                            <p class="value w-50 badge active">Yes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/CrewMembersFooter.svg" alt="Crew Members" />
+        </main>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //single humburger code
+        const sidebar = document.getElementById("sidebar");
+        const maincontent = document.getElementById("mainContent");
+        const sidebarToggle = document.getElementById("sidebar-toggle");
+        const sidebarToggleMobile = document.getElementById("close-sidebar-toggle");
+        const targetElement = document.querySelector(".desktop-hamburger");
+        const referenceElement = document.querySelector(".side-navbar");
+
+        //open sidebar when click on humburger on mobile
+        sidebarToggle.addEventListener("click", () => {
+            sidebar.classList.add("open");
+            maincontent.classList.remove("open");
+        });
+
+        //close sidebar when click on humburger on mobile
+        sidebarToggleMobile.addEventListener("click", () => {
+            sidebar.classList.remove("open");
+            maincontent.classList.add("open");
+        });
+
+        //add "open" class by default to sidebar when screen size is more than equal to 1200
+        if (window.innerWidth >= 1200) {
+            sidebar.classList.add("open");
+            maincontent.classList.remove("open");
+        }
+
+        //remove "open" class by default to sidebar when screen size is less than equal to 1200
+        if (window.innerWidth <= 1199) {
+            sidebar.classList.remove("open");
+        }
+
+        // Close sidebar when clicking outside of it on mobile, tablet, desktop
+        // window.addEventListener("click", (e) => {
+        //     if (!sidebar.contains(e.target) && e.target !== sidebarToggle) {
+        //         sidebar.classList.remove("open");
+        //     }
+        // });
+
+        // Ensure sidebar is not visible when resizing to smaller screens
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 1199) {
+                sidebar.classList.remove("open");
+            }
+        });
+        // Ensure sidebar is visible when resizing to larger screens
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 1200) {
+                sidebar.classList.add("open");
+                maincontent.classList.remove("open");
+            }
+        });
+
+        //Hide Humburger for dekstop screen if more than 1200 on document load
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth >= 1200 && referenceElement.classList.contains("open")) {
+                targetElement.style.display = "none";
+            }
+        });
+
+        sidebarToggleMobile.addEventListener("click", () => {
+            if (window.innerWidth >= 1200 && !referenceElement.classList.contains("open")) {
+                targetElement.style.display = "block";
+            }
+        });
+
+        sidebarToggle.addEventListener("click", () => {
+            if (window.innerWidth >= 1200 && referenceElement.classList.contains("open")) {
+                targetElement.style.display = "none";
+            }
+        });
+
+        // Ensure sidebar is visible when resizing to larger screens
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 1200 && referenceElement.classList.contains("open")) {
+                targetElement.style.display = "none";
+            }
+            else {
+                targetElement.style.display = "block";
+            }
+        });
+
+        //Ensure HUmburger is visible when screen size is less than 1200
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 1200 && !referenceElement.classList.contains("open")) {
+                targetElement.style.display = "block";
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            function hideTooltips() {
+                $('[data-bs-toggle="tooltip"]').tooltip('hide');
+            }
+
+            // Hide on orientation change
+            window.addEventListener("orientationchange", hideTooltips);
+
+            // Hide on window resize
+            window.addEventListener("resize", hideTooltips);
+        });
+
+        document.querySelector('.mainlevel-menu').addEventListener('scroll', function () {
+            let tooltips = document.querySelectorAll('.tooltip');
+            tooltips.forEach(tooltip => tooltip.remove());
+        });
+
+
+        // function truncateText(selector, maxLength) {
+        //     document.querySelectorAll(selector).forEach(element => {
+        //         let text = element.textContent.trim();
+
+        //         // Check if truncation is needed
+        //         if (text.length > maxLength) {
+        //             // Find the last space within maxLength
+        //             let truncated = text.slice(0, maxLength);
+        //             let lastSpace = truncated.lastIndexOf(" ");
+
+        //             // Ensure words are not cut in half
+        //             if (lastSpace > 0) {
+        //                 truncated = truncated.slice(0, lastSpace);
+        //             }
+
+        //             element.textContent = truncated + "...";
+        //         }
+        //     });
+        // }
+
+        // truncateText(".truncate", 40);
+
+    </script>
+</body>
+
+</html>

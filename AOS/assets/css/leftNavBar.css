@@ -1,0 +1,137 @@
+.side-navbar {
+    max-width: 316px;
+    background-color: #315996;
+    overflow: hidden;
+    padding: 1rem;
+    z-index: 20;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    height: 100vh;
+    width: 0%;
+}
+
+.side-navbar.open {
+    width: 25%;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.side-navbar .side-navbar-heading h2 {
+    font-style: normal;
+    font-size: 32px;
+    color: #3cbd9f;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    letter-spacing: 0.2px;
+}
+
+.side-navbar .side-navbar-heading h2 .middle-title {
+    color: #fff;
+}
+
+.side-navbar .side-navbar-heading h2 .last-title {
+    font-size: 18px;
+    color: #ebb542;
+    letter-spacing: -0.2px;
+}
+
+.side-navbar .mainlevel-menu {
+    height: calc(100vh - 26.8rem);
+    overflow-y: auto;
+}
+
+#sidebar #sidebar-toggle {
+    margin-bottom: 24px;
+}
+
+.hamburger.mobile-hamburger {
+    float: right;
+    clear: both;
+}
+
+.hamburger img {
+    width: 32px;
+    height: 32px;
+}
+
+.top-logo {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-content.open {
+    width: 100%;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 350px) and (max-width: 748px) {
+    .top-logo {
+        display: none;
+    }
+
+    .side-navbar .mainlevel-menu {
+        height: calc(100vh - 16rem);
+    }
+
+    .side-navbar-heading {
+        margin-top: 3rem;
+    }
+    .side-navbar.open {
+        max-width: 100%;
+        width: 100%;
+    }
+    .side-navbar .mainlevel-menu {
+        padding: 1rem 0 0 2rem !important;
+    }
+}
+
+@media screen and (min-width: 748px) and (max-width: 989px) {
+    .side-navbar-heading {
+        margin-top: 1rem;
+    }
+
+    .side-navbar .mainlevel-menu {
+        height: calc(100vh - 30rem);
+    }
+    .side-navbar.open {
+        width: auto;
+    }
+    .top-logo {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 990px) {
+    .side-navbar .mainlevel-menu li a span,
+    .side-navbar .sublevel-menu li a span {
+        line-height: 36px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 990px) and (orientation: landscape) {
+    .top-logo {
+        display: none;
+    }
+
+    .side-navbar .mainlevel-menu {
+        height: calc(100vh - 16rem);
+    }
+
+    .side-navbar-heading {
+        margin-top: 3rem;
+    }
+    .side-navbar.open{
+        width: 100%; max-width: 100%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .main-content {
+        width: 75%;
+        margin-left: 318px;
+        flex-grow: 1;
+        transition: 0.3s ease-in-out;
+    }
+}

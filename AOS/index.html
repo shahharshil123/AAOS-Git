@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AAOS Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/AAOS_Association_Logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/leftNavBar.css" />
+    <link rel="stylesheet" href="./assets/css/leftNavMainLevel.css" />
+    <link rel="stylesheet" href="./assets/css/leftNavSubLevel.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/stepper.css" />
+    <link rel="stylesheet" href="./assets/css/mainContent.css" />
+</head>
+
+<body>
+    <section class="main-container">
+        <aside id="sidebar" class="side-navbar">
+            <button class="hamburger mobile-hamburger">
+                <img id="close-sidebar-toggle" src="./assets/images/Hamburger.svg" alt="Hamburger Menu" />
+            </button>
+            <div class="top-logo text-center">
+                <img src="./assets/images/LaunchPad_Logo_Platform.svg" alt="AAOS Logo" />
+            </div>
+            <nav>
+                <div class="side-navbar-heading mb-3">
+                    <a href="#">
+                        <h2 class="m-0 text-uppercase">
+                            <p class="text-center mb-0">AAOS</p>
+                            <p class="text-center middle-title mb-0">LaunchPad</p>
+                            <p class="text-center last-title mb-0">Prepare for TakeOff</p>
+                        </h2>
+                    </a>
+                </div>
+                <ul class="mainlevel-menu">
+                    <li class="mb-1 me-2">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                            data-bs-delay='{"show":500}'>
+                            <span class="active">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="mb-1 me-2">
+                        <a href="#">
+                            <span>Pilot Milestones</span>
+                        </a>
+                        <ul class="sublevel-menu ms-3 mt-2 mb-3">
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center">
+                                    <div class="lock-icon">
+                                        <!-- <img src="./assets/images/LockLeftNav.svg" alt="" /> -->
+                                    </div>
+                                    <span>Annual Meeting</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center">
+                                    <div class="lock-icon">
+                                        <!-- <img src="./assets/images/LockLeftNav.svg" alt="" /> -->
+                                    </div><span>Board
+                                        Prep Part I</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Entering
+                                        Fellowship</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Fellowship Year</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Finding
+                                        a Career</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Annual
+                                        Meeting II</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Starting
+                                        Practice</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Board
+                                        Prep Part II</span>
+                                </a>
+                            </li>
+                            <li class="mb-1 me-2">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                                    data-bs-delay='{"show":500}' class="d-flex align-items-center disabled">
+                                    <div class="lock-icon">
+                                        <img src="./assets/images/LockLeftNav.svg" alt="" />
+                                    </div><span>Graduation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-1 me-2">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                            data-bs-delay='{"show":500}'>
+                            <span>Crew Members</span>
+                        </a>
+                    </li>
+                    <li class="mb-1 me-2">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                            data-bs-delay='{"show":500}'>
+                            <span>Your Sub Crew</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://www.aaos.org" target="_blank" class="pt-2 text-center d-block">
+                <img src="./assets/images/AAOS_Association_Logo.svg" alt="AAOS Logo" style="width: 150px;" />
+            </a>
+        </aside>
+
+        <main id="mainContent" class="main-content">
+            <header class="p-6">
+                <div class="top-navbar">
+                    <button class="hamburger desktop-hamburger">
+                        <img id="sidebar-toggle" src="./assets/images/HamBurgerBlue.svg" alt="Hamburger Menu" />
+                    </button>
+                    <h1>
+                        Welcome,
+                        <span>Dr. Mary Harris, MD!</span>
+                    </h1>
+                    <div class="profile dropdown">
+                        <img class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            src="./assets/images/Avator_Green.svg" alt="User avatar">
+                        <ul class="dropdown-menu p-0">
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="stepper">
+                    <h4>Here is your progress in the program:</h4>
+                    <ul class="stepper-container">
+                        <li class="completed" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Annual Meeting I</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip!"
+                            data-bs-delay='{"show":500}'>
+                            <a href="#">Board Prep Part I</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li class="disabled locked" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Entering Fellowship</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li class="disabled locked" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Fellowship Year</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li class="disabled locked" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Finding a Career</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li class="disabled locked" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Annual Meeting II</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li class="disabled locked" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Starting Practice</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li class="disabled locked" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Board Prep Part II</a>
+                            <span class="step-button"></span>
+                        </li>
+                        <li class="disabled locked" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="This is a tooltip!" data-bs-delay='{"show":500}'>
+                            <a href="#">Graduation</a>
+                            <span class="step-button"></span>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="main-content-grid mt-48 p-6 pt-0">
+                <div class="blog-image info-block">
+                    <div class="blog-image-content">
+                        <div class="blogimage">
+                            <img src="./assets/images/Dashboard_From Training_to_Practice_Photo.png" alt=""
+                                class="mb-4" />
+                        </div>
+                        <div class="blogcontent">
+                            <h3 class="main-heading">From Training to Practice</h3>
+                            <p class="mb-3">The AAOS Launchpad program is specifically
+                                designed to bridge the gap between training
+                                and practice, equipping you with the tools
+                                and confidence needed to excel.</p>
+                            <p>
+                                This program not only prepares you for the
+                                clinical and professional demands of practice
+                                but also ensures you’re ready to succeed in
+                                Board Exams Part I and Part II.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-image notification-block">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/images/Notifications.svg" alt="Notifications" class="rightimage" />
+                        <h3 class="mb-0 ms-2 main-heading">Notifications</h3>
+                    </div>
+                    <div class="notificationList mt-3">
+                        <div class="mb-3 me-3">
+                            <p>
+                                <b>EVENT</b>
+                                Join us April 15-19, 2025 for the virtual AAOS Orthopaedic Board Preparation and Review
+                                Course. Register today!
+                            </p>
+                            <a href="https://www.aaos.org/education/courses/2503251/" target="_blank"><b>Register
+                                    Today!</b>
+                            </a>
+                        </div>
+                        <div class="mb-3 me-3">
+                            <p>
+                                <b>ROCK</b>
+                                The AAOS Resident Orthopaedic Core Knowledge (ROCK ) online learning platform
+                                establishes a core knowledge baseline required for orthopaedic practice and is aligned
+                                to the ABOS Part I Exam blueprint.
+                            </p>
+                            <a href="https://www.aaos.org/education/courses/2503251/" target="_blank"><b>Access Now!</b>
+                            </a>
+                        </div>
+                        <div class="mb-3 me-3">
+                            <p>
+                                <b>ResStudy</b>
+                                Access nearly 3,500 questions from AAOS self-assessment exams (SAEs) to help you prepare
+                                for the Board Certification Examination.
+                            </p>
+                            <a href="https://www.aaos.org/education/courses/2503251/" target="_blank"><b>Access Now!</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="recently-added-content-block">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/images/RecentlyAddedContent.svg" alt="Recently Added Content"
+                            class="rightimage" />
+                        <h3 class="mb-0 ms-2 main-heading">Recently Added Content</h3>
+                    </div>
+                    <div
+                        class="d-flex flex-wrap flex-md-wrap flex-lg-nowrap flex-xl-nowrap align-items-center justify-content-between pt-4">
+                        <ul class="filter-chips pb-4">
+                            <li class="videos">
+                                <a href="javascript:void(0);">Videos</a>
+                            </li>
+                            <li class="webinars">
+                                <a href="javascript:void(0);">Webinars</a>
+                            </li>
+                            <li class="podcasts">
+                                <a href="javascript:void(0);">Podcasts</a>
+                            </li>
+                            <li class="articles">
+                                <a href="javascript:void(0);">Articles</a>
+                            </li>
+                        </ul>
+                        <!-- <div class="d-flex align-items-center pb-4">
+                                <select class="form-select ms-3" aria-label="Default select example">
+                                    <option selected>All Sub-specialites</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <select class="form-select ms-3" aria-label="Default select example">
+                                    <option selected>Sort by</option>
+                                    <option value="1">Most to Least Recent</option>
+                                    <option value="2">Least to Most Recent</option>
+                                    <option value="3">Title A-Z</option>
+                                    <option value="4">Title Z-A</option>
+                                    <option value="5">Author A-Z by last name</option>
+                                    <option value="6">Author Z-A by last name</option>
+                                </select>
+                            </div> -->
+                    </div>
+                    <div class="recently-content-added-scroll">
+                        <div class="recently-content-added-lists">
+                            <div class="card recently-content-added-single-item border-0">
+                                <div class="card-body p-0">
+                                    <p class="designation text-uppercase">
+                                        SHOULDER & ELBOW
+                                    </p>
+                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
+                                        Simulator for Resident Education Simulator for Resident Education Simulator for
+                                        Resident Education</a>
+                                </div>
+                                <div class="card-footer p-0 border-0 bg-transparent">
+                                    <p class="author-name">Author</p>
+                                    <ul class="filter-chips">
+                                        <li class="videos">Video</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card recently-content-added-single-item border-0">
+                                <div class="card-body p-0">
+                                    <p class="designation text-uppercase">
+                                        SHOULDER & ELBOW
+                                    </p>
+                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
+                                    </a>
+                                </div>
+                                <div class="card-footer p-0 border-0 bg-transparent">
+                                    <p class="author-name">Author</p>
+                                    <ul class="filter-chips">
+                                        <li class="webinars">Webinars</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card recently-content-added-single-item border-0">
+                                <div class="card-body p-0">
+                                    <p class="designation text-uppercase">
+                                        SHOULDER & ELBOW
+                                    </p>
+                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
+                                        Simulator for Resident Education for Resident Education for Resident Education
+                                        for Resident Education</a>
+                                </div>
+                                <div class="card-footer p-0 border-0 bg-transparent">
+                                    <p class="author-name">Author</p>
+                                    <ul class="filter-chips">
+                                        <li class="podcasts">Podcasts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card recently-content-added-single-item border-0">
+                                <div class="card-body p-0">
+                                    <p class="designation text-uppercase">
+                                        SHOULDER & ELBOW
+                                    </p>
+                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
+                                        Simulator for Resident Education for Resident Education for Resident Education
+                                        for Resident Education for Resident Education for Resident Education</a>
+                                </div>
+                                <div class="card-footer p-0 border-0 bg-transparent">
+                                    <p class="author-name">Author</p>
+                                    <ul class="filter-chips">
+                                        <li class="articles">Articles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card recently-content-added-single-item border-0">
+                                <div class="card-body p-0">
+                                    <p class="designation text-uppercase">
+                                        SHOULDER & ELBOW
+                                    </p>
+                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
+                                        Simulator for Resident Education for Resident Education for Resident
+                                        Education</a>
+                                </div>
+                                <div class="card-footer p-0 border-0 bg-transparent">
+                                    <p class="author-name">Author</p>
+                                    <ul class="filter-chips">
+                                        <li class="articles">Articles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card recently-content-added-single-item border-0">
+                                <div class="card-body p-0">
+                                    <p class="designation text-uppercase">
+                                        SHOULDER & ELBOW
+                                    </p>
+                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
+                                        Simulator for Resident Education for Resident Education</a>
+                                </div>
+                                <div class="card-footer p-0 border-0 bg-transparent">
+                                    <p class="author-name">Author</p>
+                                    <ul class="filter-chips">
+                                        <li class="articles">Articles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div style="margin: 20px 120px;">
+                        <img src="./assets/images/Launchpad_NoDataFound.svg" alt="Empty State"/>
+                    </div> -->
+                </div>
+                <div class="blog-image crew-member-block">
+                    <a href="#" target="_blank" class="d-flex align-items-center">
+                        <img src="./assets/images/CrewMembers.svg" alt="Crew Members" class="rightimage" />
+                        <h3 class="mb-0 ms-2 main-heading">Crew Members</h3>
+                    </a>
+                    <div class="crewmemberList mt-3">
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">JEFFERY BLOOM, MD
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">Sarah Klein, MD</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">Scott Macdonald, MD</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">Peter Lee, MD</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">Jessica Brown, MD</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">Jessica Brown, MD</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">Jessica Brown, MD</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3 ms-1">
+                            <a href="#"><img src="./assets/images/Avator_Grey.svg" alt="Crew Members"
+                                    class="crewmembersImage" /></a>
+                            <p title="This is a tooltip">Jessica Brown, MD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-image general-resource-block">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/images/GeneralResources.svg" alt="General Resources" class="rightimage" />
+                        <h3 class="mb-0 ms-2 main-heading">General Resource</h3>
+                    </div>
+                    <div class="generalResources pt-3">
+                        <ul>
+                            <li class="mb-2"><a href="https://www.aaos.org/annual" target="_blank"
+                                    title="This is a tooltip">ANNUAL MEETING</a>
+                            </li>
+                            <li class="mb-2"><a href="https://www.aaos.org/quality/career-center/" target="_blank"
+                                    title="This is a tooltip">AAOS CAREER
+                                    CENTER</a></li>
+                            <li class="mb-2"><a href="https://www.aaos.org/membership/aaos-member-resources/"
+                                    target="_blank" title="This is a tooltip">MEMBER
+                                    RESOURCES</a></li>
+                            <li class="mb-2"><a href="https://learn.aaos.org/" target="_blank"
+                                    title="This is a tooltip">ONLINE LEARNING</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-image resources-block">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/images/ABOSResources.svg" alt="General Resources" class="rightimage" />
+                        <h3 class="mb-0 ms-2 main-heading">ABOS Resources</h3>
+                    </div>
+                    <div class="abosResources pt-3">
+                        <ul>
+                            <li class="mb-2"><a href="https://www.abos.org/contact/" class="truncate"
+                                    target="_blank">Contact the ABOS</a>
+                            </li>
+                            <li class="mb-2"><a href="https://www.abos.org/residents/" class="truncate"
+                                    target="_blank">ABOS Information for Residents</a>
+                            </li>
+                            <li class="mb-2"><a href="https://www.abos.org/certification/part-i/blueprint/"
+                                    target="_blank" class="truncate">Part I Examination Blueprint</a></li>
+                            <li class="mb-2"
+                                title="ABOS Knowledge, Skills, and Behavior Program for Orthopaedic Resident Education Programs">
+                                <a href="https://www.abos.org/abosksb/" target="_blank" class="truncate">ABOS Knowledge,
+                                    Skills, and Behavior Program for Orthopaedic Resident Education Programs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="./assets/images/LaunchPad_Clouds_RocketFooter.svg" alt="LaunchPad_Clouds_RocketFooter"
+                    class="footerLaunchPadImage" />
+            </div>
+        </main>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //single humburger code
+        const sidebar = document.getElementById("sidebar");
+        const maincontent = document.getElementById("mainContent");
+        const sidebarToggle = document.getElementById("sidebar-toggle");
+        const sidebarToggleMobile = document.getElementById("close-sidebar-toggle");
+        const targetElement = document.querySelector(".desktop-hamburger");
+        const referenceElement = document.querySelector(".side-navbar");
+
+        //open sidebar when click on humburger on mobile
+        sidebarToggle.addEventListener("click", () => {
+            sidebar.classList.add("open");
+            maincontent.classList.remove("open");
+        });
+
+        //close sidebar when click on humburger on mobile
+        sidebarToggleMobile.addEventListener("click", () => {
+            sidebar.classList.remove("open");
+            maincontent.classList.add("open");
+        });
+
+        //add "open" class by default to sidebar when screen size is more than equal to 1200
+        if (window.innerWidth >= 1200) {
+            sidebar.classList.add("open");
+            maincontent.classList.remove("open");
+        }
+
+        //remove "open" class by default to sidebar when screen size is less than equal to 1200
+        if (window.innerWidth <= 1199) {
+            sidebar.classList.remove("open");
+        }
+
+        // Close sidebar when clicking outside of it on mobile, tablet, desktop
+        // window.addEventListener("click", (e) => {
+        //     if (!sidebar.contains(e.target) && e.target !== sidebarToggle) {
+        //         sidebar.classList.remove("open");
+        //     }
+        // });
+
+        // Ensure sidebar is not visible when resizing to smaller screens
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 1199) {
+                sidebar.classList.remove("open");
+            }
+        });
+        // Ensure sidebar is visible when resizing to larger screens
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 1200) {
+                sidebar.classList.add("open");
+                maincontent.classList.remove("open");
+            }
+        });
+
+        //Hide Humburger for dekstop screen if more than 1200 on document load
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth >= 1200 && referenceElement.classList.contains("open")) {
+                targetElement.style.display = "none";
+            }
+        });
+
+        sidebarToggleMobile.addEventListener("click", () => {
+            if (window.innerWidth >= 1200 && !referenceElement.classList.contains("open")) {
+                targetElement.style.display = "block";
+            }
+        });
+
+        sidebarToggle.addEventListener("click", () => {
+            if (window.innerWidth >= 1200 && referenceElement.classList.contains("open")) {
+                targetElement.style.display = "none";
+            }
+        });
+
+        // Ensure sidebar is visible when resizing to larger screens
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 1200 && referenceElement.classList.contains("open")) {
+                targetElement.style.display = "none";
+            }
+            else {
+                targetElement.style.display = "block";
+            }
+        });
+
+        //Ensure HUmburger is visible when screen size is less than 1200
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 1200 && !referenceElement.classList.contains("open")) {
+                targetElement.style.display = "block";
+            }
+        });
+
+        //bootstrap tooltip
+        document.addEventListener("DOMContentLoaded", function () {
+            let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            function hideTooltips() {
+                $('[data-bs-toggle="tooltip"]').tooltip('hide');
+            }
+
+            // Hide on orientation change
+            window.addEventListener("orientationchange", hideTooltips);
+
+            // Hide on window resize
+            window.addEventListener("resize", hideTooltips);
+        });
+
+
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+
+        //     function initializeTooltips() {
+        //         tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        //             new bootstrap.Tooltip(tooltipTriggerEl);
+        //         });
+        //     }
+
+        //     function hideAndReinitializeTooltips() {
+        //         $('[data-bs-toggle="tooltip"]').tooltip('dispose'); // Destroy existing tooltips
+        //         initializeTooltips(); // Reinitialize tooltips
+        //     }
+
+        //     // Hide and reinitialize on orientation change
+        //     window.addEventListener("orientationchange", hideAndReinitializeTooltips);
+
+        //     // Hide and reinitialize on window resize
+        //     window.addEventListener("resize", hideAndReinitializeTooltips);
+
+        //     // Initialize tooltips on page load
+        //     initializeTooltips();
+        // });
+
+        //bootstrap tooltip
+        
+        document.querySelector('.mainlevel-menu').addEventListener('scroll', function () {
+            let tooltips = document.querySelectorAll('.tooltip');
+            tooltips.forEach(tooltip => tooltip.remove());
+        });
+
+        // function truncateText(selector, maxLength) {
+        //     document.querySelectorAll(selector).forEach(element => {
+        //         let text = element.textContent.trim();
+
+        //         // Check if truncation is needed
+        //         if (text.length > maxLength) {
+        //             // Find the last space within maxLength
+        //             let truncated = text.slice(0, maxLength);
+        //             let lastSpace = truncated.lastIndexOf(" ");
+
+        //             // Ensure words are not cut in half
+        //             if (lastSpace > 0) {
+        //                 truncated = truncated.slice(0, lastSpace);
+        //             }
+
+        //             element.textContent = truncated + "...";
+        //         }
+        //     });
+        // }
+
+        // truncateText(".truncate", 40);
+
+    </script>
+</body>
+
+</html>

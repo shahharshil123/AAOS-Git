@@ -1,0 +1,100 @@
+.stepper {
+    background: rgba(235, 181, 66, 0.15);
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.stepper h4 {
+    font-style: normal;
+    font-size: 24px;
+    color: #315996;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    margin-bottom: 24px;
+}
+
+.stepper .stepper-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 24px;
+}
+
+.stepper .stepper-container li a {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #315996;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50px;
+    padding-bottom: 15px;
+}
+
+.stepper .stepper-container li.disabled a {
+    color: #B7B7B7;
+}
+
+.stepper .stepper-container li.disabled:hover a{
+    color: #B7B7B7;
+}
+
+.stepper .stepper-container li.disabled:hover .step-button{
+    color: #B7B7B7;
+}
+
+.stepper .stepper-container li .step-button {
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #315996;
+    position: relative;
+    padding: 6px;
+    text-align: center;
+}
+
+.stepper .stepper-container li:hover a {
+    color: #284C7F;
+}
+
+.stepper .stepper-container li:hover .step-button {
+    background-color: #284C7F;
+}
+
+.stepper .stepper-container li .step-button::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    margin: 0 -8px;
+    top: -3px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.stepper .stepper-container li.completed .step-button::after {
+    background-image: url('./../images/Checkmark.svg');
+}
+
+.stepper .stepper-container li.locked .step-button::after {
+    background-image: url('./../images/LockMilestone.png');
+}
+
+.stepper .stepper-container li.locked .step-button {
+    background-color: #B7B7B7;
+}
+
+.stepper {
+    display: none;
+}
+
+@media (min-width: 990px) {
+    .stepper {
+        display: block;
+    }
+}

@@ -1,0 +1,117 @@
+.top-navbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 8px;
+}
+
+.top-navbar h1 {
+    font-style: normal;
+    font-size: 48px;
+    line-height: 50px;
+    color: #3cbd9f;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.top-navbar h2 {
+    font-style: normal;
+    font-size: 22px;
+    color: #315996;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+.top-navbar h1 span {
+    color: #315996;
+}
+
+.hamburger {
+    outline: none;
+    border: 0;
+    background: transparent;
+    text-align: end;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.profile .dropdown-menu li a {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #315996;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    padding: 0.5rem;
+}
+
+.profile .dropdown-menu li:hover a {
+    background-color: #3cbd9f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.top-navbar h2 {
+    display: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 748px) {
+    .top-navbar h1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 989px) {
+    .top-navbar {
+        position: relative;
+    }
+
+    .top-navbar h1 {
+        position: absolute;
+        top: 68px;
+        left: 0rem;
+        right: 0rem;
+    }
+
+    .profile img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 990px) and (orientation: landscape) {
+    .top-navbar h1 {
+        top: 45px;
+    }
+}
+
+@media screen and (min-width: 748px) and (max-width: 989px) {
+    .top-navbar h1 {
+        font-size: 22px;
+        top: 42px;
+    }
+}
+
+@media screen and (min-width: 989px) and (max-width: 1200px) {
+    .top-navbar h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .top-navbar h2 {
+        display: block;
+    }
+}
