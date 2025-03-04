@@ -13,7 +13,7 @@
 }
 
 .side-navbar.open {
-    width: 25%;
+    width: 30%;
     opacity: 1;
     transform: translateX(0);
 }
@@ -67,16 +67,8 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 748px) {
-    .top-logo {
-        display: none;
-    }
-
     .side-navbar .mainlevel-menu {
-        height: calc(100vh - 16rem);
-    }
-
-    .side-navbar-heading {
-        margin-top: 3rem;
+        height: calc(100vh - 28rem);
     }
     .side-navbar.open {
         max-width: 100%;
@@ -97,9 +89,6 @@
     }
     .side-navbar.open {
         width: auto;
-    }
-    .top-logo {
-        display: block;
     }
 }
 
@@ -129,7 +118,7 @@
 
 @media(min-width: 1200px) {
     .main-content {
-        width: 75%;
+        width: 70%;
         margin-left: 318px;
         flex-grow: 1;
         transition: 0.3s ease-in-out;

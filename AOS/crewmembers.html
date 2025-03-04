@@ -152,13 +152,15 @@
         <main id="mainContent" class="main-content">
             <header class="p-6">
                 <div class="top-navbar">
-                    <button class="hamburger desktop-hamburger">
-                        <img id="sidebar-toggle" src="./assets/images/HamBurgerBlue.svg" alt="Hamburger Menu" />
-                    </button>
-                    <h1>
-                        Welcome,
-                        <span>Dr. Mary Harris, MD!</span>
-                    </h1>
+                    <div class="d-flex gap-3">
+                        <button class="hamburger desktop-hamburger">
+                            <img id="sidebar-toggle" src="./assets/images/HamBurgerBlue.svg" alt="Hamburger Menu" />
+                        </button>
+                        <div class="d-flex flex-column">
+                            <h1 id="main-header-text">Crew <span>Members</span></h1>
+                            <h2>Find Members of Your Crew and View Your Sub Crew</h2>
+                        </div>
+                    </div>
                     <div class="profile dropdown">
                         <img class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
                             src="./assets/images/Avator_Green.svg" alt="User avatar">
@@ -211,7 +213,7 @@
                                 <td>University of B</td>
                                 <td>Sports Medicine</td>
                                 <td>###-###-###</td>
-                                <td>drf@gmail.com</td>
+                                <td>jhhjhjhjhjhjhjhjhjhjhdrf@gmail.com</td>
                                 <td><span class="badge default">No</span></td>
                             </tr>
                             <tr>
@@ -536,6 +538,7 @@
             }
         });
 
+        //bootstrap tooltip
         document.addEventListener("DOMContentLoaded", function () {
             let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
             tooltipTriggerList.forEach(function (tooltipTriggerEl) {
@@ -552,12 +555,29 @@
             // Hide on window resize
             window.addEventListener("resize", hideTooltips);
         });
+        //bootstrap tooltip
 
         document.querySelector('.mainlevel-menu').addEventListener('scroll', function () {
             let tooltips = document.querySelectorAll('.tooltip');
             tooltips.forEach(tooltip => tooltip.remove());
         });
 
+        //welcome header changing font size
+        document.addEventListener("DOMContentLoaded", function () {
+            function adjustHeaderFontSize() {
+                const header = document.getElementById("main-header-text");
+                if (header && window.innerWidth >= 1200) {
+                    const textLength = header.textContent.trim().length;
+                    header.style.fontSize = textLength > 28 ? "36px" : "48px";
+                } else if (header) {
+                    header.style.fontSize = ""; // Reset to default
+                }
+            }
+
+            adjustHeaderFontSize(); // Apply on page load
+            window.addEventListener("resize", adjustHeaderFontSize); // Apply on resize
+        });
+        //welcome header changing font size
 
         // function truncateText(selector, maxLength) {
         //     document.querySelectorAll(selector).forEach(element => {

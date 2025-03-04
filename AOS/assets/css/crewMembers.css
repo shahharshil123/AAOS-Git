@@ -64,11 +64,17 @@
 }
 
 .crew-members-block tbody {
-    height: calc(100vh - 355px) !important;
+    height: calc(100vh - 24rem) !important;
     overflow: auto !important;
     display: block !important;
     overflow-x: hidden !important;
     margin-top: 5px;
+}
+
+.table-mobile-view{
+    height: calc(100vh - 19rem) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
 }
 
 .crew-members-block table th {
@@ -102,6 +108,9 @@
     width: 6%;
 }
 
+.crew-members-block table td:nth-child(7) {
+    word-break: break-all;
+}
 .crew-members-block table td span {
     padding: 4px 20px;
     border-radius: 4px;
