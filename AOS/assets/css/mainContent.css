@@ -91,20 +91,19 @@ h3.main-heading {
     width: 32px;
     height: 32px;
     margin-right: 12px;
+    border-radius: 50%;
 }
 
 .crewmemberList p {
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     color: #315996;
     font-weight: 700;
     font-family: 'Open Sans';
     text-transform: uppercase;
     margin-bottom: 0;
-}
-
-.resources-block li {
-    line-height: 15px;
+    width: 100%;
+    margin-left: 8px;
 }
 
 .general-resource-block ul li a,
@@ -115,6 +114,7 @@ h3.main-heading {
     font-weight: 700;
     font-family: 'Open Sans';
     text-transform: uppercase;
+    line-height: 20px;
     /* display: inline-block;
     width: 290px;
     white-space: nowrap;
@@ -133,7 +133,7 @@ h3.main-heading {
 .recently-added-content-block .filter-chips li,
 .recently-added-content-block .filter-chips li a {
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16.34px;
     color: #fff;
     font-weight: 700;
@@ -216,7 +216,7 @@ h3.main-heading {
 
 .recently-content-added-single-item p {
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     color: #315996;
     font-weight: normal;
     font-family: 'Open Sans';
@@ -228,18 +228,18 @@ h3.main-heading {
 }
 
 .recently-content-added-single-item p.author-name {
-    color: #b7b7b7;
+    color: #818285;
 }
 
 .recently-content-added-single-item a {
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     color: #315996 !important;
     font-weight: 700;
     font-family: 'Open Sans';
     margin-bottom: 4px;
     display: block;
-    line-height: 16px;
+    line-height: 20px;
 }
 
 

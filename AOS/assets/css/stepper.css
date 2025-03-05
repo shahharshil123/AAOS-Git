@@ -93,6 +93,13 @@
     display: none;
 }
 
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px){
+    .stepper .stepper-container li a{
+        min-height: 65px;
+    }
+}
+
 @media (min-width: 990px) {
     .stepper {
         display: block;

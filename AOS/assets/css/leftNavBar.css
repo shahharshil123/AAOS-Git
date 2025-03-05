@@ -2,7 +2,7 @@
     max-width: 316px;
     background-color: #315996;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1rem 1.4rem;
     z-index: 20;
     opacity: 0;
     transform: translateX(-100%);
@@ -38,7 +38,7 @@
 }
 
 .side-navbar .mainlevel-menu {
-    height: calc(100vh - 26.8rem);
+    height: calc(100vh - 27.5rem);
     overflow-y: auto;
 }
 
