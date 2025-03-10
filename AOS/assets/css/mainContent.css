@@ -4,6 +4,7 @@
     /* grid-template-rows: auto auto auto; */
     gap: 20px;
 }
+
 /* 
 .info-block {
     grid-column: 1/ 2;
@@ -52,7 +53,6 @@ h3.main-heading {
     font-weight: normal;
     font-family: 'Open Sans';
     margin-bottom: 0;
-    letter-spacing: 0.1px;
 }
 
 .rightimage {
@@ -60,16 +60,19 @@ h3.main-heading {
     height: 48px;
     max-width: 100%;
 }
-.info-block,
-.notification-block{
+
+/* .info-block,
+.notification-block {
     min-height: 316px;
-}
+} */
+
 .notificationList {
     height: 12.4rem;
     overflow-y: auto;
     overflow-x: hidden;
 }
-.crewmemberList{
+
+.crewmemberList {
     height: 15rem;
     overflow-y: auto;
     overflow-x: hidden;
@@ -207,12 +210,16 @@ h3.main-heading {
 }
 
 .recently-content-added-lists {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-right: 18px;
+    column-count: 2;
 }
 
+.recently-content-added-single-item {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
 
 .recently-content-added-single-item p {
     font-style: normal;
@@ -246,12 +253,16 @@ h3.main-heading {
 @media(min-width: 1024px) {
     .blog-image-content {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1.35fr 1fr;
         gap: 24px;
     }
 
     .blogimage {
         order: 1;
+        text-align: end;
+    }
+    .blogimage img {
+        width: 16.4rem;
     }
 }
 
@@ -260,6 +271,12 @@ h3.main-heading {
         grid-template-columns: 1fr;
     }
 
+    .recently-added-content-block li.articles {
+        margin-top: 12px;
+    }
+    .recently-content-added-lists{
+        column-count: 1;
+    }
     /* .info-block,
     .notification-block,
     .recently-added-content-block,
@@ -277,12 +294,6 @@ h3.main-heading {
         order: 2;
     } */
 
-    .blogimage img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-    }
-
     .recently-content-added-lists {
         grid-template-columns: 1fr;
     }
@@ -296,7 +307,6 @@ h3.main-heading {
     .main-content-grid {
         grid-template-columns: 1.4fr 1fr;
     }
-    
     /* .info-block {
         grid-column: 1/ 2;
     }

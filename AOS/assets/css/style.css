@@ -160,6 +160,9 @@ aside:hover ::-webkit-scrollbar-track,
     .main-container {
         flex-direction: column;
     }
+    .blogimage img {
+        margin-bottom: 1.4rem !important;
+    }
 }
 
 @media(min-width: 990px) {

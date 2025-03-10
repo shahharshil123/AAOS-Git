@@ -14,8 +14,8 @@
 
 .crew-members-block li a {
     font-style: normal;
-    font-size: 12px;
-    line-height: 16.34px;
+    font-size: 14px;
+    line-height: 16px;
     color: #315996;
     font-weight: 700;
     font-family: 'Open Sans';
@@ -31,26 +31,6 @@
     background-color: #284C7F;
     color: #fff;
 }
-
-/* .crew-members-block .table-desktop-view {
-    height: calc(100vh - 312px) !important;
-    overflow: auto !important;
-    overflow-x: hidden !important;
-}
-
-.crew-members-block .table {
-    width: 100%;
-    border-collapse: collapse;
-    display: block;
-    padding-right: 1rem;
-}
-
-.crew-members-block .table thead {
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 10;
-} */
 
 .crew-members-block tbody tr {
     height: 60px !important;
@@ -71,31 +51,30 @@
     margin-top: 5px;
 }
 
-.table-mobile-view{
+.table-mobile-view {
     height: calc(100vh - 19rem) !important;
     overflow-y: auto !important;
     overflow-x: hidden;
 }
 
-.crew-members-block table th {
-    font-style: normal;
-    font-size: 12px;
-    line-height: 16.34px;
+.crew-members-block table th,
+.crew-members-block table td {
+    font-size: 14px;
+    line-height: 20px;
     color: #315996;
     font-weight: 700;
     font-family: 'Open Sans';
     text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.crew-members-block table th {
     border-bottom: 1px solid #315996;
 }
 
 .crew-members-block table td {
-    font-style: normal;
-    font-size: 12px;
-    line-height: 16.34px;
-    color: #315996;
-    font-weight: 700;
-    font-family: 'Open Sans';
     vertical-align: middle;
+    text-transform: capitalize;
 }
 
 .crew-members-block table tbody tr {
@@ -108,9 +87,11 @@
     width: 6%;
 }
 
-.crew-members-block table td:nth-child(7) {
-    word-break: break-all;
+.crew-members-block table th:nth-child(8),
+.crew-members-block table td:nth-child(8) {
+    width: 9%;
 }
+
 .crew-members-block table td span {
     padding: 4px 20px;
     border-radius: 4px;
