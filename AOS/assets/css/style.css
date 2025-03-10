@@ -42,7 +42,10 @@
 }
 
 /* END Semibold */
-
+footer{
+    background-color: #3b3b3b;
+    position: relative; z-index: 21;
+}
 * {
     margin: 0;
     padding: 0;
