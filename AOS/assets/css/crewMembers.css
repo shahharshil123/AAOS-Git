@@ -140,10 +140,19 @@
     font-weight: 700;
     font-family: 'Open Sans';
     margin: 0;
+    word-break: break-word;
 }
 
 .table-mobile-view {
     display: none;
+}
+
+.crewMembersFooterImage{
+    padding: 0 2rem;
+}
+
+.w-45{
+    width: 45%;
 }
 
 @media screen and (min-width: 350px) and (max-width: 990px) {

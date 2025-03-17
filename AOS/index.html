@@ -736,14 +736,33 @@
         });
 
         //bootstrap tooltip
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        //     tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        //         new bootstrap.Tooltip(tooltipTriggerEl);
+        //     });
+
+        //     function hideTooltips() {
+        //         $('[data-bs-toggle="tooltip"]').tooltip('hide');
+        //     }
+
+        //     // Hide on orientation change
+        //     window.addEventListener("orientationchange", hideTooltips);
+
+        //     // Hide on window resize
+        //     window.addEventListener("resize", hideTooltips);
+        // });
+
         document.addEventListener("DOMContentLoaded", function () {
             let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-                new bootstrap.Tooltip(tooltipTriggerEl);
+            let tooltips = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
             });
 
             function hideTooltips() {
-                $('[data-bs-toggle="tooltip"]').tooltip('hide');
+                tooltips.forEach(function (tooltip) {
+                    tooltip.hide(); // Use Bootstrap's hide() method
+                });
             }
 
             // Hide on orientation change
