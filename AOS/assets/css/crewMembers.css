@@ -75,7 +75,8 @@
     vertical-align: top;
 }
 
-.crew-members-block table td {
+.crew-members-block table td,
+.single-grid .value {
     vertical-align: middle;
     text-transform: capitalize;
 }
