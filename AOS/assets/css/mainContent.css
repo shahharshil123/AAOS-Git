@@ -1,34 +1,8 @@
 .main-content-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /* grid-template-rows: auto auto auto; */
     gap: 20px;
 }
-
-/* 
-.info-block {
-    grid-column: 1/ 2;
-}
-
-.notification-block {
-    grid-column: 2/ 3;
-}
-
-.recently-added-content-block {
-    grid-column: 1/ 2;
-}
-
-.crew-member-block {
-    grid-column: 2/ 3;
-}
-
-.general-resource-block {
-    grid-column: 2/ 3;
-}
-
-.resources-block {
-    grid-column: 2/ 3;
-} */
 
 .blog-image {
     background-color: #f0f0f0;
@@ -60,11 +34,6 @@ h3.main-heading {
     height: 48px;
     max-width: 100%;
 }
-
-/* .info-block,
-.notification-block {
-    min-height: 316px;
-} */
 
 .notificationList {
     height: 12.4rem;
@@ -201,6 +170,14 @@ h3.main-heading {
     margin-bottom: 20px;
     display: inline-block;
     width: 100%;
+    break-inside: avoid;
+    /* Standard */
+    page-break-inside: avoid;
+    /* For older browsers */
+    -webkit-column-break-inside: avoid;
+    /* For Safari */
+    -moz-column-break-inside: avoid;
+    /* Firefox (Older versions) */
 }
 
 .recently-content-added-single-item p {
@@ -243,6 +220,7 @@ h3.main-heading {
         order: 1;
         text-align: end;
     }
+
     .blogimage img {
         width: 16.4rem;
     }
@@ -256,25 +234,10 @@ h3.main-heading {
     .recently-added-content-block li.articles {
         margin-top: 12px;
     }
-    .recently-content-added-lists{
+
+    .recently-content-added-lists {
         column-count: 1;
     }
-    /* .info-block,
-    .notification-block,
-    .recently-added-content-block,
-    .crew-member-block,
-    .general-resource-block,
-    .resources-block {
-        grid-column: 1 / span 1;
-    }
-
-    .recently-added-content-block {
-        order: 1;
-    }
-
-    .footerLaunchPadImage {
-        order: 2;
-    } */
 
     .recently-content-added-lists {
         grid-template-columns: 1fr;
@@ -289,36 +252,6 @@ h3.main-heading {
     .main-content-grid {
         grid-template-columns: 1.4fr 1fr;
     }
-    /* .info-block {
-        grid-column: 1/ 2;
-    }
-    
-    .notification-block {
-        grid-column: 2/ 3;
-    }
-    
-    .recently-added-content-block {
-        grid-column: 1/ 2;
-    }
-    
-    .crew-member-block {
-        grid-column: 2/ 3;
-    }
-    
-    .general-resource-block {
-        grid-column: 2/ 3;
-    }
-    
-    .resources-block {
-        grid-column: 2/ 3;
-    }
-    .recently-added-content-block {
-        order: 0;
-    }
-
-    .footerLaunchPadImage {
-        order: 2;
-    } */
 }
 
 @media only screen and (width: 1366px) and (height: 1024px) {

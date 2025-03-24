@@ -29,3 +29,7 @@ Password: +01282025@Evoke_HP
 
 UAT Link Excel
 https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fprotect.checkpoint.com%2Fv2%2Fr02%2F___https%3A%2F%2Faaos.sharepoint.com%2F%3Ax%3A%2Fs%2FEarlyCareerPilotCo-CreationTeam2024%2FEc7-1WPfMRlCosmzUZbMnwQBzqvhu5ckTB9IpcKMlYIt0A___.YzJlOmV2b2tlOmM6bzpiMjVkNGY2NTVlZjViZmY3MDdiY2UyOGI4MmRjMWFkNTo3Ojk0Yzc6OWYzY2Q0OGZhMTI4ZmJkOGZiZmZjMzRhMTg4N2I1ZjMxZThiMmY3NDZmYzQzMzFhNjQxYWQzODM0NDc0M2YxMjpoOlQ6Tg&data=05%7C02%7Chparimal%40evoketechnologies.com%7C583809b1c48542646ae408dd5cc96c77%7Ce1c5d9eea951451e8432642c23d40071%7C0%7C0%7C638768742448880931%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=vRpJTpDunf7kflA0lAx8IaSR80hWYhPx%2BTRlXDn3O0g%3D&reserved=0
+
+
+ADO
+https://aaosprojects.visualstudio.com/Academy%20Wide/_sprints/taskboard/Academy%20Wide%20Team/Academy%20Wide/Sprint%2060

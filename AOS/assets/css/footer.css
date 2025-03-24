@@ -2,12 +2,11 @@ footer {
     background-color: #525252;
     color: #fff;
     position: relative;
-    /* bottom: 0; */
     width: 97.1%;
 }
 .main-content.open footer{ width: 100%;}
 footer .container{
-    padding: 2rem 1rem;
+    padding: 2rem;
 }
 
 .align-right {
@@ -69,10 +68,10 @@ footer .btn {
 
 @media (max-width:767.98px) {
 
-    footer .btn.btn--round {
+    /* footer .btn.btn--round {
         width: 50px;
         height: 50px
-    }
+    } */
 
     footer .btn.btn--round:after {
         font-size: 16px
@@ -85,6 +84,7 @@ footer .footer--panel {
     -ms-flex-direction: row;
     flex-direction: row;
     list-style: none;
+    gap: 12px;
 }
 
 @media (max-width:767.98px) {
@@ -133,8 +133,8 @@ footer .footer--panel p {
     font-family: 'Open Sans';
     font-size: 11px;
     text-transform: capitalize;
-    margin-top: 10px;
-    line-height: 8px
+    margin-top: 14px;
+    line-height: 14px;
 }
 
 footer .footer--panel .footer--social-links {
@@ -160,7 +160,6 @@ footer .footer--links {
 footer .footer--links li {
     list-style: none;
     padding: 5px 0;
-    margin-left: -10px
 }
 
 @media (max-width:767.98px) {
@@ -172,8 +171,6 @@ footer .footer--links li {
 }
 
 footer .footer--links li a {
-    padding-left: 10px;
-    padding-right: 10px;
     color: #fff;
     text-transform: uppercase;
     font-size: 13px
@@ -258,7 +255,8 @@ footer .footer-app-links li {
     footer .footer-app-links {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        row-gap: 10px
+        row-gap: 10px;
+        justify-content: center;
     }
 }
 
