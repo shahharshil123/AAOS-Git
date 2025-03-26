@@ -66,17 +66,17 @@ footer .btn {
     margin-right: 10px
 }
 
-@media (max-width:767.98px) {
+/* @media (max-width:767.98px) {
 
-    /* footer .btn.btn--round {
+    footer .btn.btn--round {
         width: 50px;
         height: 50px
-    } */
+    }
 
     footer .btn.btn--round:after {
         font-size: 16px
     }
-}
+} */
 
 footer .footer--panel {
     display: -ms-flexbox;
@@ -84,7 +84,6 @@ footer .footer--panel {
     -ms-flex-direction: row;
     flex-direction: row;
     list-style: none;
-    gap: 12px;
 }
 
 @media (max-width:767.98px) {
@@ -134,7 +133,7 @@ footer .footer--panel p {
     font-size: 11px;
     text-transform: capitalize;
     margin-top: 14px;
-    line-height: 14px;
+    line-height: 8px;
 }
 
 footer .footer--panel .footer--social-links {
@@ -171,9 +170,17 @@ footer .footer--links li {
 }
 
 footer .footer--links li a {
+    padding-left: 8px;
+    padding-right: 8px;
     color: #fff;
     text-transform: uppercase;
-    font-size: 13px
+}
+
+@media(max-width: 1024px){
+    footer .footer--links li a {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 footer .footer--links li a:hover {
@@ -234,7 +241,8 @@ footer .copyrights {
 
 footer .footer-app-label {
     width: 100%;
-    text-align: center
+    text-align: center;
+    line-height: 14px !important;
 }
 
 footer .footer-app-links {

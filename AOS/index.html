@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/stepper.css" />
     <link rel="stylesheet" href="./assets/css/mainContent.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/virtual-select.min.css" />
 </head>
 
 <body>
@@ -248,9 +249,8 @@
                                 class="rightimage" />
                             <h3 class="mb-0 ms-2 main-heading">Recently Added Content</h3>
                         </div>
-                        <div
-                            class="d-flex flex-wrap flex-md-wrap flex-lg-nowrap flex-xl-nowrap align-items-center justify-content-between pt-4">
-                            <ul class="filter-chips pb-4">
+                        <div class="row pt-4">
+                            <ul class="col-12 col-md-12 col-lg-8 col-xl-8 filter-chips pb-4">
                                 <li class="videos">
                                     <a href="javascript:void(0);">Videos</a>
                                 </li>
@@ -264,23 +264,32 @@
                                     <a href="javascript:void(0);">Articles</a>
                                 </li>
                             </ul>
-                            <!-- <div class="d-flex align-items-center pb-4">
-                                    <select class="form-select ms-3" aria-label="Default select example">
-                                        <option selected>All Sub-specialites</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                    <select class="form-select ms-3" aria-label="Default select example">
-                                        <option selected>Sort by</option>
-                                        <option value="1">Most to Least Recent</option>
-                                        <option value="2">Least to Most Recent</option>
-                                        <option value="3">Title A-Z</option>
-                                        <option value="4">Title Z-A</option>
-                                        <option value="5">Author A-Z by last name</option>
-                                        <option value="6">Author Z-A by last name</option>
-                                    </select>
-                                </div> -->
+                            <div class="col-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center pb-4">
+                                <select id="example-select" multiple name="native-select" placeholder="Native Select"
+                                    data-search="false" data-silent-initial-value-set="true">
+                                    <option selected>Non-Clinical</option>
+                                    <option value="Foot and Ankle">Foot and Ankle</option>
+                                    <option value="Shoulder and Elbow">Shoulder and Elbow</option>
+                                    <option value="Sports Medicine">Sports Medicine</option>
+                                    <option value="Trauma">Trauma</option>
+                                    <option value="Spine">Spine</option>
+                                    <option value="Adult">Adult</option>
+                                    <option value="Reconstruction Hip and Knee">Reconstruction Hip and Knee
+                                    </option>
+                                    <option value="Musculoskeletal Oncology">Musculoskeletal Oncology</option>
+                                    <option value="Basic Science">Basic Science</option>
+                                    <option value="Pediatric Orthopaedics">Pediatric Orthopaedics</option>
+                                </select>
+                                <!-- <select class="form-select ms-3" aria-label="Default select example">
+                                    <option selected>Sort by</option>
+                                    <option value="1">Most to Least Recent</option>
+                                    <option value="2">Least to Most Recent</option>
+                                    <option value="3">Title A-Z</option>
+                                    <option value="4">Title Z-A</option>
+                                    <option value="5">Author A-Z by last name</option>
+                                    <option value="6">Author Z-A by last name</option>
+                                </select> -->
+                            </div>
                         </div>
                         <div class="recently-content-added-scroll">
                             <div class="recently-content-added-lists">
@@ -289,9 +298,9 @@
                                     <p class="designation text-uppercase">
                                         SHOULDER & ELBOW
                                     </p>
-                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
-                                        Simulator for Resident Education Simulator for Resident Education Simulator
-                                        for
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" id="myBtn">Construct
+                                        Validity for a Cost-effective Arthroscopic Surgery
+                                        Simulator for Resident Education
                                         Resident Education</a>
                                     <p class="author-name">Author</p>
 
@@ -304,7 +313,8 @@
                                     <p class="designation text-uppercase">
                                         SHOULDER & ELBOW
                                     </p>
-                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" id="myBtn">Construct
+                                        Validity for a Cost-effective Arthroscopic Surgery
                                     </a>
                                     <p class="author-name">Author</p>
 
@@ -317,8 +327,9 @@
                                     <p class="designation text-uppercase">
                                         SHOULDER & ELBOW
                                     </p>
-                                    <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
-                                        Simulator for Resident Education for Resident Education for Resident
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" id="myBtn">Construct
+                                        Validity for a Cost-effective Arthroscopic Surgery
+                                        Simulator for Resident Resident
                                         Education
                                         for Resident Education</a>
                                     <p class="author-name">Author</p>
@@ -335,7 +346,7 @@
                                     <a href="#">Construct Validity for a Cost-effective Arthroscopic Surgery
                                         Simulator for Resident Education for Resident Education for Resident
                                         Education
-                                        for Resident Education for Resident Education for Resident Education</a>
+                                        for Resident Education for Resident Education</a>
                                     <p class="author-name">Author</p>
 
                                     <ul class="filter-chips">
@@ -561,6 +572,7 @@
                 </div>
                 <img src="./assets/images/LaunchPad_Clouds_RocketFooter.svg" alt="LaunchPad_Clouds_RocketFooter"
                     class="footerLaunchPadImage" />
+                <a href="#" class="m-auto d-block feedback-image"><img src="./assets/images/FeedbackGraphic.svg" alt="Feedback Image"/></a>
             </div>
 
             <footer>
@@ -637,14 +649,30 @@
         </main>
     </section>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video-js id="myPlayerID" data-video-id="6352127492112" data-account="3095177541001"
+                        data-player="default" data-embed="default" controls></video-js>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/css/virtual-select.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.js"></script>
 
     <script>
         //single humburger code
@@ -791,6 +819,95 @@
             adjustHeaderFontSize(); // Apply on page load
             window.addEventListener("resize", adjustHeaderFontSize); // Apply on resize
         });
+
+        VirtualSelect.init({
+            ele: '#example-select',
+            multiple: true,
+            optionsCount: 5,
+            alwaysShowSelectedOptionsLabel: true,
+            showDropboxAsPopup: false,
+        });
+
+        document.querySelector('#example-select').addEventListener('change', function () {
+            console.log(this.value);
+        });
+        document.querySelector('#example-select').addEventListener('reset', function () {
+            console.log(this.value, 'reset');
+        });
+
+        // Function to refresh tooltips on Virtual Select options
+        function refreshTooltips() {
+            setTimeout(() => {
+                document.querySelectorAll('.vscomp-option').forEach((option) => {
+                    const textSpan = option.querySelector('.vscomp-option-text');
+                    if (textSpan) {
+                        const tooltipText = textSpan.textContent.trim();
+                        textSpan.setAttribute('title', tooltipText); // Update tooltip
+                    }
+                });
+            }, 200);
+        }
+
+        // Observe dropdown changes to apply tooltips dynamically
+        const dropdownContainer = document.querySelector('.vscomp-options');
+        if (dropdownContainer) {
+            const observer = new MutationObserver(refreshTooltips);
+            observer.observe(dropdownContainer, { childList: true, subtree: true });
+        }
+
+        // Function to update tooltip for selected values (handles "All (X)" case)
+        function updateSelectedTooltip() {
+            setTimeout(() => {
+                const selectedEle = document.querySelector('.vscomp-value');
+                const instance = document.querySelector('#example-select')?.virtualSelect;
+
+                if (selectedEle && instance) {
+                    const selectedValues = instance.getSelectedOptions().map(option => option.label).join(', ');
+                    selectedEle.setAttribute('title', selectedValues);
+                }
+            }, 100);
+        }
+
+        // Listen for value changes and update tooltips
+        document.querySelector('#example-select').addEventListener('change', updateSelectedTooltip);
+
+        // Initial updates
+        setTimeout(() => {
+            refreshTooltips();
+            updateSelectedTooltip();
+        }, 500);
+
+        require.config({
+            'paths': {
+                'bc': 'https://players.brightcove.net/3095177541001/default_default/index.min'
+            },
+            waitSeconds: 30
+        });
+
+        require(['bc'], function () {
+            var myPlayer = videojs.getPlayers().myPlayerID;
+            myPlayer.on('loadstart', function () {
+                <!-- myPlayer.play(); -->
+            })
+        });
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("btn-close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            var myPlayer = videojs.getPlayers().myPlayerID;
+            myPlayer.play();
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            var myPlayer = videojs.getPlayers().myPlayerID;
+            myPlayer.pause();
+        }
 
     </script>
 </body>

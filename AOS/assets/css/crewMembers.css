@@ -1,5 +1,5 @@
 .crew-members-block img.crew-members-image {
-    width: 52px;
+    width: 48px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -73,17 +73,26 @@
 .crew-members-block table th {
     border-bottom: 1px solid #315996;
     vertical-align: top;
+    text-align: center;
 }
 
-.crew-members-block table td,
-.single-grid .value {
+.crew-members-block table td {
     vertical-align: middle;
     text-transform: capitalize;
+    text-align: center;
+}
+
+.coach td{
+    background-color: rgba(87, 137, 211, 0.2) !important;
+}
+
+img.coach{
+    border: 2px solid #315996;
+    padding: 1px;
 }
 
 .crew-members-block table tbody tr {
-    border-bottom: 2px solid #f0f0f0;
-    border-right: 12px solid white;
+    border-bottom: 2px solid #818285;
 }
 
 .crew-members-block table th:nth-child(1),
@@ -91,9 +100,16 @@
     width: 6%;
 }
 
-.crew-members-block table th:nth-child(8),
-.crew-members-block table td:nth-child(8) {
-    width: 9%;
+/* .crew-members-block table th:nth-child(3),
+.crew-members-block table th:nth-child(4), */
+.crew-members-block table th:nth-child(6),
+.crew-members-block table th:nth-child(7),
+.crew-members-block table th:nth-child(8) {
+   padding: .5rem 1.1rem;
+}
+
+.crew-members-block table td:nth-child(7) {
+    text-transform: initial;
 }
 
 .crew-members-block table td span {
@@ -130,12 +146,15 @@
 
 .crew-members-block .single-grid {
     border-top: 1px solid #315996;
+    background-color: rgba(87, 137, 211, 0.2) !important;
+    padding: 12px;
+    margin-bottom: 12px;
 }
 
 .crew-members-block .single-grid .title,
 .crew-members-block .single-grid .value {
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16.34px;
     color: #315996;
     font-weight: 700;
@@ -147,8 +166,12 @@
 .table-mobile-view {
     display: none;
 }
+.feedback-image{
+    float: right;
+}
 
-.crewMembersFooterImage{
+.crewMembersFooterImage,
+.feedback-image {
     padding: 0 2rem;
 }
 

@@ -207,7 +207,9 @@ h3.main-heading {
     display: block;
     line-height: 20px;
 }
-
+.feedback-image img{
+    width: 10rem;
+}
 
 @media(min-width: 1024px) {
     .blog-image-content {

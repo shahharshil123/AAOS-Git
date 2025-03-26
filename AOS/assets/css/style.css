@@ -143,6 +143,11 @@ aside:hover ::-webkit-scrollbar-track,
     display: flex;
 }
 
+.video-js {
+    height: calc(100vh - 6rem);
+    width: 100%;
+}
+
 @media screen and (min-width: 350px) and (max-width: 748px) {
     .p-6 {
         padding: 1rem 1rem 0 1rem !important;

@@ -389,7 +389,8 @@
     background-size: contain;
 }
 
-.vscomp-wrapper .vscomp-option.selected .checkbox-icon::after {
+.vscomp-wrapper .vscomp-option.selected .checkbox-icon::after,
+.vscomp-wrapper .checkbox-icon.checked::after {
     background-image: url('../images/check-box-selected.svg');
     background-position: center;
     background-repeat: no-repeat;
