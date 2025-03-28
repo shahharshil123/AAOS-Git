@@ -100,14 +100,6 @@ img.coach{
     width: 6%;
 }
 
-/* .crew-members-block table th:nth-child(3),
-.crew-members-block table th:nth-child(4), */
-.crew-members-block table th:nth-child(6),
-.crew-members-block table th:nth-child(7),
-.crew-members-block table th:nth-child(8) {
-   padding: .5rem 1.1rem;
-}
-
 .crew-members-block table td:nth-child(7) {
     text-transform: initial;
 }
