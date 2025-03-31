@@ -162,7 +162,8 @@
                         </div>
                     </div>
                     <div class="profile">
-                        <img src="./assets/images/Avator_Green.svg" alt="User avatar">
+                        <img src="./assets/images/Avator_Green.svg" alt="User avatar" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="This is a tooltip!" data-bs-delay='{"show":500}'>
                         <!-- <ul class="dropdown-menu p-0">
                             <li><a class="dropdown-item" href="#">Sign Out</a></li>
                         </ul> -->
@@ -572,7 +573,8 @@
                 </div>
                 <img src="./assets/images/LaunchPad_Clouds_RocketFooter.svg" alt="LaunchPad_Clouds_RocketFooter"
                     class="footerLaunchPadImage" />
-                <a href="#" class="m-auto d-block feedback-image"><img src="./assets/images/FeedbackGraphic.svg" alt="Feedback Image"/></a>
+                <a href="#" class="m-auto feedback-image"><img src="./assets/images/FeedbackGraphic.svg" alt="Feedback Image"/></a>
+                <div class="sticky-talk"><a href="#">Feedback</a></div>
             </div>
 
             <footer>
@@ -649,7 +651,7 @@
         </main>
     </section>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -863,7 +865,8 @@
 
                 if (selectedEle && instance) {
                     const selectedValues = instance.getSelectedOptions().map(option => option.label).join(', ');
-                    selectedEle.setAttribute('title', selectedValues);
+                    const finalValue = selectedValues.trim();
+                    selectedEle.setAttribute('title', finalValue);
                 }
             }, 100);
         }
