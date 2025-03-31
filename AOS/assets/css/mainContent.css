@@ -94,8 +94,8 @@ h3.main-heading {
     text-overflow: ellipsis; */
 }
 .recently-added-content-block ul.filter-chips {
-    padding-right: calc(var(--bs-gutter-x) * .5) !important;
-    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    padding-right: calc(1.5rem * .5) !important;
+    padding-left: calc(1.5rem * .5) !important;
 }
 .recently-added-content-block .filter-chips li {
     padding: 4px 12px;
