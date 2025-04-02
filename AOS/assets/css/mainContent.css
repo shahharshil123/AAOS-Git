@@ -74,8 +74,16 @@ h3.main-heading {
     font-family: 'Open Sans';
     text-transform: uppercase;
     margin-bottom: 0;
-    width: 100%;
-    margin-left: 8px;
+}
+
+.crewmemberList span {
+    font-style: normal;
+    font-size: 13px;
+    color: #315996;
+    font-weight: 400;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .general-resource-block ul li a,
@@ -93,7 +101,7 @@ h3.main-heading {
     overflow: hidden;
     text-overflow: ellipsis; */
 }
-.recently-added-content-block ul.filter-chips {
+.recently-added-content-block ul.filter-chips-main {
     padding-right: calc(1.5rem * .5) !important;
     padding-left: calc(1.5rem * .5) !important;
 }
@@ -236,6 +244,15 @@ h3.main-heading {
 
 .modal-dialog{
     margin: 0.35rem auto;
+}
+
+.btn-close:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.handCursor{
+    cursor: pointer;
 }
 
 @media(min-width: 1024px) {
