@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AHS DSM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-gap: 1.5rem;
+            margin-top: 2.25rem;
+            list-style-type: none;
+        }
+
+        .box-info li {
+            padding: 1rem;
+            border-radius: 1.25rem;
+            display: flex;
+            align-items: center;
+            grid-gap: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .box-info li img.tiles-icons {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 10px;
+            padding: 0.4rem;
+        }
+
+        .box-info li:nth-child(1) {
+            background-color: #5AA7A7;
+        }
+
+        .box-info li:nth-child(2) {
+            background-color: #96D7C6;
+        }
+
+        .box-info li:nth-child(3) {
+            background-color: #BAC94A;
+        }
+
+        .box-info li:nth-child(4) {
+            background-color: #E2D36B;
+        }
+
+        .box-info li:nth-child(5) {
+            background-color: #6C8CBF;
+        }
+
+        .box-info li:nth-child(1):hover {
+            background-color: rgba(90, 167, 167, 0.2);
+        }
+
+        .box-info li:nth-child(2):hover {
+            background-color: rgba(150, 215, 198, 0.2);
+        }
+
+        .box-info li:nth-child(3):hover {
+            background-color: rgba(186, 201, 74, 0.2);
+        }
+
+        .box-info li:nth-child(4):hover {
+            background-color: rgba(226, 211, 107, 0.2);
+        }
+
+        .box-info li:nth-child(5):hover {
+            background-color: rgba(108, 140, 191, 0.2);
+        }
+
+        .box-info li:nth-child(1):hover .text h2,
+        .box-info li:nth-child(1):hover .text p {
+            color: #5AA7A7;
+        }
+
+        .box-info li:nth-child(2):hover .text h2,
+        .box-info li:nth-child(2):hover .text p {
+            color: #96D7C6;
+        }
+
+        .box-info li:nth-child(3):hover .text h2,
+        .box-info li:nth-child(3):hover .text p {
+            color: #BAC94A;
+        }
+
+        .box-info li:nth-child(4):hover .text h2,
+        .box-info li:nth-child(4):hover .text p {
+            color: #E2D36B;
+        }
+
+        .box-info li:nth-child(5):hover .text h2,
+        .box-info li:nth-child(5):hover .text p {
+            color: #6C8CBF;
+        }
+
+        .dashboard-heading {
+            font-family: "Lato", sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            line-height: normal;
+            color: #342E37;
+        }
+
+        .box-info li .text h2 {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: normal;
+            color: #fff;
+        }
+
+        .box-info li .text p {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: normal;
+            color: #fff;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="dashboard-heading">Dashboard</h1>
+        <ul class="box-info">
+            <li>
+                <img src="./glucose.png" alt="Glucose" class="tiles-icons" />
+                <span class="text">
+                    <h2>117</h2>
+                    <p>Glucose</p>
+                </span>
+            </li>
+            <li>
+                <img src="./o2-staturation.png" alt="Staturation" class="tiles-icons" />
+                <span class="text">
+                    <h2>92</h2>
+                    <p>O2 Staturation</p>
+                </span>
+            </li>
+            <li>
+                <img src="./blood-pressure.png" alt="Blood Pressure" class="tiles-icons" />
+                <span class="text">
+                    <h2>120/80</h2>
+                    <p>Blood Pressure</p>
+                </span>
+            </li>
+            <li>
+                <img src="./steps.png" alt="Steps" class="tiles-icons" />
+                <span class="text">
+                    <h2>2614</h2>
+                    <p>Steps</p>
+                </span>
+            </li>
+            <li>
+                <img src="./weight.png" alt="Weight" class="tiles-icons" />
+                <span class="text">
+                    <h2>144.90</h2>
+                    <p>Weight</p>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
