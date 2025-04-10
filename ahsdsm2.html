@@ -24,26 +24,24 @@
 
         .box-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            grid-gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+            grid-gap: 1rem;
             margin-top: 2.25rem;
             list-style-type: none;
         }
 
         .box-info li {
             padding: 1rem;
-            border-radius: 1.25rem;
+            border-radius: 1rem;
             display: flex;
             align-items: center;
-            grid-gap: 1.5rem;
+            grid-gap: 1rem;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
         .box-info li img.tiles-icons {
             width: 3rem;
             height: 3rem;
-            border-radius: 10px;
-            padding: 0.4rem;
         }
 
         .box-info li:nth-child(1) {
@@ -122,46 +120,59 @@
         .box-info li .text h2 {
             font-family: "Lato", sans-serif;
             font-weight: 700;
-            font-size: 1.125rem;
-            line-height: normal;
+            font-size: 18px;
+            line-height: 1.2;
             color: #fff;
         }
 
         .box-info li .text p {
             font-family: "Lato", sans-serif;
             font-weight: 400;
-            font-size: 1rem;
-            line-height: normal;
+            font-size: 14px;
+            line-height: 1.2;
             color: #fff;
             margin-bottom: 0;
         }
 
 
-        .profile-main{
+        .profile-main {
             display: flex;
-            gap: 24px;
-            background-color: #f39612;
-            border-radius: 1.25rem;
-            margin-top: 5rem;
-            padding: 1rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            margin-top: 4rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        .profile-image img{
-            width: 32px; height: 32px;
+
+        .profile-image {
+            background-color: #ff9e55;
+            padding: 1rem 0.4rem;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .profile-details .labelName{
+
+        .profile-image img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .profile-details .labelName {
             font-family: "Lato", sans-serif;
             font-weight: 700;
             font-size: 1rem;
-            line-height: normal;
+            line-height: 1.2;
             color: #000;
             margin-bottom: 0;
             text-transform: uppercase;
         }
-        .profile-details .labelValue{
+
+        .profile-details .labelValue {
             font-family: "Lato", sans-serif;
             font-weight: 400;
-            font-size: 1rem;
-            line-height: normal;
+            font-size: 0.8rem;
+            line-height: 1.2;
             color: #000;
             margin-bottom: 0;
         }
@@ -171,65 +182,67 @@
 <body>
 
     <div class="container">
-        <h1 class="dashboard-heading">Dashboard</h1>
-        <ul class="box-info">
-            <li>
-                <img src="./glucose.png" alt="Glucose" class="tiles-icons" />
-                <span class="text">
-                    <h2>117</h2>
-                    <p>Glucose</p>
-                </span>
-            </li>
-            <li>
-                <img src="./o2-staturation.png" alt="Staturation" class="tiles-icons" />
-                <span class="text">
-                    <h2>92</h2>
-                    <p>O2 Staturation</p>
-                </span>
-            </li>
-            <li>
-                <img src="./blood-pressure.png" alt="Blood Pressure" class="tiles-icons" />
-                <span class="text">
-                    <h2>120/80</h2>
-                    <p>Blood Pressure</p>
-                </span>
-            </li>
-            <li>
-                <img src="./steps.png" alt="Steps" class="tiles-icons" />
-                <span class="text">
-                    <h2>2614</h2>
-                    <p>Steps</p>
-                </span>
-            </li>
-            <li>
-                <img src="./weight.png" alt="Weight" class="tiles-icons" />
-                <span class="text">
-                    <h2>144.90</h2>
-                    <p>Weight</p>
-                </span>
-            </li>
-        </ul>
-
-        <div class="profile-main">
-            <div class="profile-image">
-                <img src="./AOS/assets/images/Avator_Grey.svg" alt=""/>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="profile-main">
+                    <div class="profile-image">
+                        <img src="./AOS/assets/images/Avator_Grey.svg" alt="" />
+                    </div>
+                    <div class="profile-details pt-3 pb-3 ps-2 pe-2">
+                        <div class="pb-2">
+                            <p class="labelName">NAME:</p>
+                            <p class="labelValue">Testing Demo Testing Demo Testing Demo</p>
+                        </div>
+                        <div class="pb-2">
+                            <p class="labelName">APPOINTMENT:</p>
+                            <p class="labelValue">04/09/2024 00:00</p>
+                        </div>
+                        <div class="pb-2">
+                            <p class="labelName">ACTIVITY:</p>
+                            <p class="labelValue">04/09/2024 00:00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="profile-details">
-                <div class="d-flex align-items-center">
-                    <span class="labelName">NAME</span>
-                    <span>:</span>
-                    <span class="labelValue">Testing Demo Testing Demo Testing Demo</span>
-                </div>
-                <div class="d-flex align-items-center">
-                    <span class="labelName">APPOINTMENT</span>
-                    <span>:</span>
-                    <span class="labelValue">04/09/2024 00:00</span>
-                </div>
-                <div class="d-flex align-items-center">
-                    <span class="labelName">ACTIVITY</span>
-                    <span>:</span>
-                    <span class="labelValue">04/09/2024 00:00</span>
-                </div>
+            <div class="col-md-10">
+                <h1 class="dashboard-heading">Dashboard</h1>
+                <ul class="box-info">
+                    <li>
+                        <img src="./glucose.png" alt="Glucose" class="tiles-icons" />
+                        <span class="text">
+                            <h2>117</h2>
+                            <p>Glucose</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./o2-staturation.png" alt="Staturation" class="tiles-icons" />
+                        <span class="text">
+                            <h2>92</h2>
+                            <p>O2 Staturation</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./blood-pressure.png" alt="Blood Pressure" class="tiles-icons" />
+                        <span class="text">
+                            <h2>120/80</h2>
+                            <p>Blood Pressure</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./steps.png" alt="Steps" class="tiles-icons" />
+                        <span class="text">
+                            <h2>2614</h2>
+                            <p>Steps</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="./weight.png" alt="Weight" class="tiles-icons" />
+                        <span class="text">
+                            <h2>144.90</h2>
+                            <p>Weight</p>
+                        </span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
