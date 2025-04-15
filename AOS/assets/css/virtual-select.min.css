@@ -16,8 +16,8 @@
 
 .vscomp-ele {
     display: inline-block;
-    max-width: 250px;
-    width: 100%
+    /* max-width: 138px; */;
+    width: 100%;
 }
 
 .vscomp-wrapper {

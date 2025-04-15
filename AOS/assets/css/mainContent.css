@@ -60,9 +60,8 @@ h3.main-heading {
 }
 
 .crewmemberList .crewmembersImage {
-    width: 32px;
+    min-width: 32px;
     height: 32px;
-    margin-right: 12px;
     border-radius: 50%;
 }
 
@@ -106,7 +105,7 @@ h3.main-heading {
     padding-left: calc(1.5rem * .5) !important;
 }
 .recently-added-content-block .filter-chips li {
-    padding: 4px 12px;
+    padding: 4px 8px;
     border-radius: 4px;
     text-align: center;
     border: 1px solid #fff;
@@ -210,6 +209,11 @@ h3.main-heading {
     display: block;
     line-height: 20px;
 }
+
+.recently-added-content-block li.articles {
+    margin-top: 8px;
+}
+
 .feedback-image{
     display: none;
 }
@@ -277,20 +281,12 @@ h3.main-heading {
         grid-template-columns: 1fr;
     }
 
-    .recently-added-content-block li.articles {
-        margin-top: 12px;
-    }
-
     .recently-content-added-lists {
         column-count: 1;
     }
 
     .recently-content-added-lists {
         grid-template-columns: 1fr;
-    }
-
-    .recently-added-content-block .filter-chips li {
-        padding: 4px 8px;
     }
 }
 
