@@ -176,6 +176,32 @@
             color: #000;
             margin-bottom: 0;
         }
+
+        .profile-image-modal {
+            width: 10rem;
+        }
+
+        label {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: normal;
+            color: #342E37;
+        }
+        .myProfile{
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: normal;
+            color: #342E37;
+        }
+        input:focus,
+        textarea:focus,
+        select:focus{
+            outline: none !important;
+            box-shadow: none !important;
+            border: 1px solid #00aba1 !important;
+        }
     </style>
 </head>
 
@@ -245,6 +271,111 @@
                 </ul>
             </div>
         </div>
+
+        <div class="row mt-4">
+            <h4 class="myProfile">My Profile</h4>
+            <hr/>
+            <div class="col-3">
+                <form>
+                    <img src="o2-staturation.png" class="profile-image-modal" />
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="upload-file">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary">Primary</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-9">
+                <form class="row g-3 mt-4">
+                    <div class="col-md-2">
+                        <label for="inputParticipant" class="form-label">Participant ID:</label>
+                        <input type="text" class="form-control" id="inputParticipant" disabled>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputDescription" class="form-label">Description:</label>
+                        <textarea class="form-control" id="inputDescription"></textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputFirstName" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" id="inputFirstName">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputMiddleName" class="form-label">Middle Name:</label>
+                        <input type="text" class="form-control" id="inputMiddleName">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputLastName" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="inputLastName">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputGender" class="form-label">Gender:</label>
+                        <select id="inputGender" class="form-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputDob" class="form-label">Date of Birth:</label>
+                        <input type="text" class="form-control" id="inputDob">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPno" class="form-label">Phone No:</label>
+                        <input type="number" class="form-control" id="inputPno">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputEmail" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddressOne" class="form-label">Address #1:</label>
+                        <textarea class="form-control" id="inputAddressOne"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddressTwo" class="form-label">Address #2:</label>
+                        <textarea class="form-control" id="inputAddressTwo"></textarea>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputCity" class="form-label">City:</label>
+                        <input type="email" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputState" class="form-label">State:</label>
+                        <select id="inputState" class="form-select">
+                            <option value="alaska">Alaska</option>
+                            <option value="california">California</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputCountry" class="form-label">Country:</label>
+                        <select id="inputCountry" class="form-select">
+                            <option value="us">US</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputZip" class="form-label">Zip:</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputToken" class="form-label">Token:</label>
+                        <input type="text" class="form-control" id="inputToken" value="1234567891234567" disabled>
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"

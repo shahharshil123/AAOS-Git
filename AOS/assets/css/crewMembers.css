@@ -1,5 +1,7 @@
 .crew-members-block img.crew-members-image {
     width: 48px;
+    height: 48px;
+    max-width: 48px;
     border-radius: 50%;
     margin-right: 10px;
 }
